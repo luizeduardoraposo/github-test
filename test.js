@@ -19,3 +19,7 @@ console.log(`Random color: ${randomColor}`);
 // Generate a random date within the last 10 years
 const randomDate = new Date(Date.now() - Math.floor(Math.random() * 10 * 365 * 24 * 60 * 60 * 1000));
 console.log(`Random date: ${randomDate.toDateString()}`);
+
+// Generate a random hexadecimal color code
+const randomHexColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+console.log(`Random hex color: ${randomHexColor}`);
