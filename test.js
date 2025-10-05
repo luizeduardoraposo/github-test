@@ -15,3 +15,7 @@ console.log(`Random string: ${randomString}`);
 // Generate a random RGB color
 const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
 console.log(`Random color: ${randomColor}`);
+
+// Generate a random date within the last 10 years
+const randomDate = new Date(Date.now() - Math.floor(Math.random() * 10 * 365 * 24 * 60 * 60 * 1000));
+console.log(`Random date: ${randomDate.toDateString()}`);
