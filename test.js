@@ -23,3 +23,7 @@ console.log(`Random date: ${randomDate.toDateString()}`);
 // Generate a random hexadecimal color code
 const randomHexColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
 console.log(`Random hex color: ${randomHexColor}`);
+
+// Generate a random integer array of length 5
+const randomArray = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+console.log(`Random array: [${randomArray.join(', ')}]`);
