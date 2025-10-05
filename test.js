@@ -7,3 +7,7 @@ if (randomNumber % 2 === 0) {
 } else {
   console.log(`The number ${randomNumber} is odd.`);
 }
+
+// Generate a random string of 8 characters
+const randomString = Math.random().toString(36).substring(2, 10);
+console.log(`Random string: ${randomString}`);
