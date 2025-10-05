@@ -27,3 +27,7 @@ console.log(`Random hex color: ${randomHexColor}`);
 // Generate a random integer array of length 5
 const randomArray = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
 console.log(`Random array: [${randomArray.join(', ')}]`);
+
+// Generate a random boolean value
+const randomBoolean = Math.random() < 0.5;
+console.log(`Random boolean: ${randomBoolean}`);
