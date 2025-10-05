@@ -11,3 +11,7 @@ if (randomNumber % 2 === 0) {
 // Generate a random string of 8 characters
 const randomString = Math.random().toString(36).substring(2, 10);
 console.log(`Random string: ${randomString}`);
+
+// Generate a random RGB color
+const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+console.log(`Random color: ${randomColor}`);
