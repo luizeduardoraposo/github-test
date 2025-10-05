@@ -31,3 +31,7 @@ console.log(`Random array: [${randomArray.join(', ')}]`);
 // Generate a random boolean value
 const randomBoolean = Math.random() < 0.5;
 console.log(`Random boolean: ${randomBoolean}`);
+
+// Generate a random floating-point number between 0 and 1 with 2 decimal places
+const randomFloat = (Math.random() * 1).toFixed(2);
+console.log(`Random float: ${randomFloat}`);
