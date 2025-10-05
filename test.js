@@ -35,3 +35,7 @@ console.log(`Random boolean: ${randomBoolean}`);
 // Generate a random floating-point number between 0 and 1 with 2 decimal places
 const randomFloat = (Math.random() * 1).toFixed(2);
 console.log(`Random float: ${randomFloat}`);
+
+// Generate a random password of 12 characters
+const randomPassword = Math.random().toString(36).slice(-12);
+console.log(`Random password: ${randomPassword}`);
